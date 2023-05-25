@@ -1,5 +1,4 @@
 const { REST, Routes } = require('discord.js');
-const { log } = require('node:console');
 const fs = require('node:fs');
 const path = require('node:path');
 require('dotenv').config();

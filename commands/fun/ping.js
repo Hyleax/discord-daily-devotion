@@ -6,16 +6,20 @@ const { SlashCommandBuilder } = require("discord.js");
  and contain no capital letters, spaces, or symbols
 */  
 const slashCommandBuilder = new SlashCommandBuilder()
-slashCommandBuilder.setName('ping').setDescription('Replies with Pong')
+
+slashCommandBuilder
+.setName('ping')
+.setDescription('Replies with Pong')
 
 // provides command definition
 const execute = async(interaction) => {
     await interaction.reply('Pong!');
+    const message = await interaction.fetchReply()
+    console.log(message);
 }
 
 module.exports = 
     {
-        
         data: slashCommandBuilder,
         execute
     }
