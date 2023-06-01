@@ -33,7 +33,7 @@ const execute = async(interaction) => {
     const chapter = interaction.options.getInteger('chapter')
     const verse = interaction.options.getInteger('verse')
     const toVerse = interaction.options.getInteger('to_verse')
-    const biblePassage = `${book} ${chapter}: ${verse}${toVerse !== 0 ? " - "+toVerse :""}`
+    const biblePassage = `${book.toUpperCase()} ${chapter}: ${verse}${toVerse !== 0 ? " - "+toVerse :""}`
 
     // defer bot response
     await interaction.deferReply();
