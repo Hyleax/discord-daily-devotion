@@ -1,3 +1,4 @@
+const { callChatGPT } = require('../../openaiAPI')
 const {SlashCommandBuilder} = require('discord.js')
 
 const slashCommandBuilder = new SlashCommandBuilder()
@@ -32,14 +33,17 @@ const execute = async(interaction) => {
     const chapter = interaction.options.getInteger('chapter')
     const verse = interaction.options.getInteger('verse')
     const toVerse = interaction.options.getInteger('to_verse')
+    const biblePassage = `${book} ${chapter}: ${verse}${toVerse !== 0 ? " - "+toVerse :""}`
 
     // defer bot response
-
+    await interaction.deferReply();
     // chuck into chatGPT api
-
+    const questions = await callChatGPT(biblePassage)
     // reply with response
-    
-    await interaction.reply(`The passage/verse you are querying is ${book} ${chapter}: ${verse}${toVerse !== 0 ? " - "+toVerse :""}`)
+    await interaction.editReply(
+        `Here are some devotion questions for ${biblePassage}
+        ${questions}`)
+ 
 }
 
 module.exports = {
