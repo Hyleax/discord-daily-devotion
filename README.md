@@ -13,7 +13,10 @@ This bot utilizes the OpenAI API, specically the text-davinci-003 model. This di
 * Context and explanations behind passages
 
 ## Bot Installation
-Coming in the future :)
+* click on https://discord.com/oauth2/authorize?client_id=1110932576811634719&scope=applications.commands
+![](./md-images/adding-to-server.png)
+* You will be redirected to this page
+* choose a server and add the bot to your server
 
 ## Bot Usage Instructions
 <h3><u>Generating Devotion questions</u></h3>
