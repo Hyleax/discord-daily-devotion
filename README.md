@@ -13,7 +13,7 @@ This bot utilizes the OpenAI API, specically the text-davinci-003 model. This di
 * Context and explanations behind passages
 
 ## Bot Installation
-* click on https://discord.com/oauth2/authorize?client_id=1110932576811634719&scope=applications.commands
+* click on https://discord.com/oauth2/authorize?client_id=1110932576811634719&permissions=294205270016&scope=applications.commands%20bot
 ![](./md-images/adding-to-server.png)
 * You will be redirected to this page
 * choose a server and add the bot to your server
