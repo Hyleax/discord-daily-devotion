@@ -40,9 +40,7 @@ const execute = async(interaction) => {
     // chuck into chatGPT api
     const questions = await callChatGPT(biblePassage)
     // reply with response
-    await interaction.editReply(
-        `Here are some devotion questions for ${biblePassage}
-        ${questions}`)
+    await interaction.editReply(questions)
  
 }
 
