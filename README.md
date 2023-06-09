@@ -8,9 +8,12 @@ This bot utilizes the OpenAI API, specically the text-davinci-003 model. This di
 ## Features
 * Generate questions for a bible passage
 
+## Feature currently being worked on:
+* Reminder System to alert users to do their dev
+
 ## Future Updates will include:
-* Devotion progress tracking
 * Context and explanations behind passages
+* Devotion progress tracking
 
 ## Bot Installation
 * click on https://discord.com/oauth2/authorize?client_id=1110932576811634719&permissions=294205270016&scope=applications.commands%20bot
