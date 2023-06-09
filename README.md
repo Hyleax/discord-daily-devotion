@@ -9,7 +9,7 @@ This bot utilizes the OpenAI API, specically the text-davinci-003 model. This di
 * Generate questions for a bible passage
 
 ## Feature currently being worked on:
-* Reminder System to alert users to do their dev
+* Reminder System to alert users to do their devotions
 
 ## Future Updates will include:
 * Context and explanations behind passages
