@@ -11,7 +11,7 @@ const openai = new OpenAIApi(configuration);
 const callChatGPT = async(verse) => {
     const response = await openai.createCompletion({
         model: "text-davinci-003",
-        prompt: `can you give me ${verse} in NIV formatted by 'verse number. verse', can you also generate 3 devotions questions from it, can you also add a fourth question analyzing this passage in detail?`,
+        prompt: `can you give me ${verse} in NIV formatted by 'verse number. verse', can you also generate 3 devotions questions from it`,
         max_tokens: 500,
         temperature: 0,
       });
